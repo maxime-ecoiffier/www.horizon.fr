@@ -1,0 +1,141 @@
+.widget-title{
+    font-family: $Mont;
+    font-size: 28px;
+}
+
+// IMAGES THUMBNAILS
+
+div#img-mini-categorie{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 20px;
+    padding-bottom: 0px;
+    .hover-thumbnail-search{
+        background: rgba(46,30,21, 0);
+        //background: url('../images/_visuels_dyns/search-background-white.png') center no-repeat;
+        //background: url('../images/_visuels_dyns/search-background-isse.png') center no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        position: absolute;
+        top:0px;
+        bottom: 0px;
+        left:0px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        img.loupe-categorie{
+            opacity: 0;
+            width: 15px;
+            margin-top: 15px;
+            display: block;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        span{
+            color: $cara;
+            font-family: $Mont;
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            padding-left: 30px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover{
+            background: rgba(46,30,21, 0.8);
+            //background: url('../images/_visuels_dyns/search-background.png') center no-repeat;
+            //background: url('../images/_visuels_dyns/search-background-isee.png') center no-repeat;
+            background-size: cover;
+            position: absolute;
+            /*top:25%;
+            bottom: 25%;
+            width: 50%;
+            left: 25%;*/
+            top:0px;
+            bottom: 0px;
+            left:0px;
+            width: 100%;
+            border-radius: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            img.loupe-categorie{
+                opacity: 1;
+                width: 15px;
+                margin-top: 15px;
+                display: block;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+            span{
+                color: $cara;
+                font-family: $Mont;
+                font-size: 12px;
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                padding-left: 5px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+// TEXTES SOUS THUMBNAILS
+
+.product.type-product.has-post-thumbnail.product-type-simple.instock{
+    .star-rating{
+        display: none;
+    }
+    h3{
+        text-align: center;
+        font-family: $Geo;
+        color: $cara;
+        font-style: italic;
+        font-size: 18px;
+    }
+    span.price{
+        text-align: center;
+        span.amount{
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            font-family: $Mont;
+        }
+    }
+    a.button{
+        width: 100%;
+        text-transform: uppercase;
+    }
+}

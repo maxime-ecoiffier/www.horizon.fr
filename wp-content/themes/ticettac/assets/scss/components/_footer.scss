@@ -1,0 +1,186 @@
+#footer-container{
+  background: $fonce;
+  div.footer-1{
+    border-right: 1px solid #23130a;
+    min-height: 280px;
+    display: inline-block;
+  }
+  div.footer-2{
+    border-right: 1px solid #23130a;
+    border-left: 1px solid #37271e;
+    padding-left: 40px;
+    min-height: 280px;
+    display: inline-block;
+    div.container-footer-bloc{
+      height: 130px
+    }
+  }
+  div.footer-3{
+    border-left: 1px solid #37271e;
+    min-height: 280px;
+    display: inline-block;
+    div.container-footer-bloc{
+      height: 130px
+    }
+    form{
+      position: relative;
+      input[type=text]{
+        color: $cara;
+      }
+      input[type=submit]{
+        position: absolute;
+        top:0px;
+        right:0px;
+        height: 100%;
+        width: 20%;
+        background: $cara;
+        color: #fff;
+        border: none;
+        font-family: $Mont;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          color: $fonce;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  #footer h3{
+    font-size: 14px;
+    font-family: $Mont;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: $cara;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  #footer ul.text-footer li a{
+    color: #fff;
+    font-size: 12px;
+    font-family: $Geo;
+    font-style: italic;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      //background: url('../images/_visuels_dyns/puces.png') no-repeat left;
+      img{
+        margin-right: 10px;
+        left: 0px;
+        opacity: 1;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+    img{
+      opacity: 0;
+      margin-left: -20px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  ul.social li{
+    display: inline;
+    a{
+    //border-radius: 50%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: $Geo;
+    font-style: italic;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    //border: 1px dotted rgba(255,255,255,0);
+    i{
+      top:0px;
+      bottom:0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      align-items: center;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover{
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      //transform: rotate(45deg);
+      //border: 1px dotted rgba(255,255,255,1);
+      background: $cara;
+      i{
+        color: $fonce;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        //transform: rotate(-45deg);
+      }
+
+    }
+    }
+  }
+}
+
+div.copyright{
+  background: #000;
+  padding: 15px;
+  img{
+    display: inline-block;
+  }
+  p{
+    color: #fff;
+    font-family: $Geo;
+    font-style: italic;
+    display: inline-block;
+    a{
+      color: $cara;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+//====================================================================================== MEDIA QUERIES =============================================================//
+
+@include breakpoint(small){
+    div.footer-1{
+      padding-left: 40px;
+    }
+    div.footer-3{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .container-footer-bloc{
+      min-height: 190px;
+      display: block;
+    }
+}

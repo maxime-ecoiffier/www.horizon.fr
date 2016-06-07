@@ -1,0 +1,46 @@
+#page .main-content{
+    width: 100%;
+}
+
+//=================================================================== MESSAGES WOOCOMMERCE
+
+.woocommerce .woocommerce-message{
+    background: #fff;
+    border: 1px solid $cara;
+    font-size: 14px;
+    color: $cara;
+    border-top-color: $cara;
+    vertical-align: middle;
+        &::before{
+            color: $fonce;
+        }
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    border-radius: 0px;
+    background: #fff;
+    color: $fonce;
+    border: 1px solid $fonce;
+    font-family: $Mont;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+        &:hover{
+            color: #fff;
+            background: $fonce;
+        }
+}
+
+a.checkout-button.button.alt.wc-forward{
+    background: $fonce;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 17px;
+    border: none;
+        &:hover{
+            background: $cara;
+            border: none;
+
+        }
+}

@@ -1,0 +1,312 @@
+div.article-montre{
+    margin-bottom: 50px;
+}
+
+form.cart.add-to-cart-accueil{
+    margin-top: 0px;
+        button.ajouter.nouveaux-arrivants{
+            font-family: $Mont;
+            text-transform: uppercase;
+            border-radius: 0px;
+            font-size: 12px;
+            background: transparent;
+            border: 1px solid $fonce;
+            color: $fonce;
+            width: 100%;
+            display: inline-block;
+            height: 35px;
+            margin-top: 15px;
+            line-height: 15px;
+            margin-left: 0px;
+            text-align: center;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+}
+
+form.cart.add-to-cart-accueil button.ajouter.nouveaux-arrivants:hover ~ div.hover-thumbnail-cart{
+    background: rgba(46,30,21, 0.7);
+    cursor: pointer;
+        i.fa-shopping-cart{
+        opacity: 1;
+    }
+}
+
+form.cart.add-to-cart-accueil button.ajouter.nouveaux-arrivants:hover{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: $fonce;
+    border: 1px solid $fonce;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#img-mini a{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    div.hover-thumbnail-search{
+        background: rgba(46,30,21, 0);
+        //background: url('../images/_visuels_dyns/search-background-white.png') center no-repeat;
+        //background: url('../images/_visuels_dyns/search-background-isse.png') center no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        position: absolute;
+        top:0px;
+        bottom: 0px;
+        left:0px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        span{
+          color: $cara;
+          font-family: $Mont;
+          font-size: 11px;
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          padding-left: 30px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        img{
+          opacity: 0;
+          width: 15px;
+          display: block;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+    }
+    &:hover > div.hover-thumbnail-search{
+        background: rgba(46,30,21, 0.8);
+        //background: url('../images/_visuels_dyns/search-background.png') center no-repeat;
+        //background: url('../images/_visuels_dyns/search-background-isee.png') center no-repeat;
+        background-size: cover;
+        position: absolute;
+        /*top:25%;
+        bottom: 25%;
+        width: 50%;
+        left: 25%;*/
+        top:0px;
+        bottom: 0px;
+        left:0px;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        span{
+          color: $cara;
+          font-family: $Mont;
+          font-size: 12px;
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          padding-left: 5px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        img{
+          opacity: 1;
+          width: 15px;
+          display: block;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+div.hover-thumbnail-cart{
+    background: rgba(46,30,21, 0);
+    height: auto;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i.fa-shopping-cart{
+        color: #fff;
+        font-size: 28px;
+        opacity: 0;
+    }
+}
+
+a.ajouter.best-sales{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid $cara;
+    color: $cara;
+    width: 100%;
+    display: inline-block;
+    height: 35px;
+    margin-top: 15px;
+    line-height: 35px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.ajouter.best-sales:hover{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: $cara;
+    border: 1px solid $cara;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/*
+.woocommerce a.added_to_cart{
+    color: #dbdbdb;
+    font-family: $Mont;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: $cara;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+}*/
+
+h3.title-article-montre{
+    color: $cara;
+    font-family: $Geo;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+
+span.price-black{
+    text-align: center;
+    font-family: $Mont;
+    color: $fonce;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+}
+
+span.price-white{
+    text-align: center;
+    font-family: $Mont;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+
+}
+
+header h1.page-title{
+    border-image: url('../../../../uploads/horizon/border-title.png') 300px 3px;
+    font-family: $Mont;
+    font-size: 36px;
+}
+
+.woocommerce-result-count{
+    display: none;
+}
+
+//================================================================= MEILLEURES VENTES
+
+section.MeilleuresVentes ul.products li.product-type-simple{
+   #respond input#submit, a.button, button.button, input.button{
+      font-family: $Mont;
+      text-transform: uppercase;
+      border-radius: 0px;
+      font-size: 12px;
+      background: transparent;
+      border: 1px solid $cara;
+      color: $cara;
+      width: 100%;
+      display: inline-block;
+      height: 35px;
+      line-height: 18px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      &:hover{
+          color: #fff;
+          background: $cara;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+      }
+  }
+  span.price{
+      text-align: center;
+      span.amount{
+          font-family: $Mont;
+          color: #fff;
+          font-size: 18px;
+      }
+  }
+}

@@ -1,0 +1,217 @@
+div.summary.entry-summary p{
+    font-size: 14px;
+    font-family: $Geo;
+    font-style: italic;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+    color: $fonce;
+        a{
+            color: #333;
+            &:hover{
+                color: $cara;
+            }
+        }
+}
+
+.clr{
+    clear: both;
+}
+
+h1.product_title.entry-title{
+    font-family: $Geo;
+    color: $cara;
+    font-style: italic;
+    font-size: 40px;
+}
+
+p.price{
+    font-family: $Mont;
+    color: #000;
+    font-size: 30px;
+    font-style: inherit;
+}
+
+.woocommerce p.stars a{
+    color: $cara;
+    &:hover{
+        color: $cara;
+    }
+}
+
+h2.description-produit{
+    font-family: $Geo;
+    color: $cara;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.woocommerce div.product .stock.in-stock{
+    font-family: $Mont;
+    font-size: 14px;
+    color: $cara;
+    font-style: inherit;
+}
+
+form#commentform p.form-submit input#submit{
+    color: $fonce;
+    border: 1px solid $fonce;
+    font-style: normal;
+    text-transform: uppercase;
+    border-radius: 0px;
+    background: transparent;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+    font-family: $Mont;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background: $fonce;
+        color: #fff;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: #000;
+    font-style: inherit;
+    font-size: 30px;
+}
+
+button.single_add_to_cart_button.button.alt{
+    background: transparent;
+    color: $fonce;
+    border: 1px solid $fonce;
+    border-radius: 0px;
+    font-family: $Mont;
+    text-transform: uppercase;
+    margin-left: 15px;
+    height: 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 60%;
+}
+
+button.single_add_to_cart_button.button.alt:hover{
+    background: $fonce;
+    color: #fff;
+    border: 1px solid $fonce;
+    border-radius: 0px;
+    font-family: $Mont;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.woocommerce .quantity .qty{
+    height: 50px;
+    display: inline-block;
+}
+
+div.pp_pic_holder.pp_woocommercediv .ppt{
+    display :none !important;
+}
+
+//================================= DESCRIPTION
+
+div.container-description{
+    div.description-produit{
+        border-left: 1px solid #dbdbdb;
+    }
+    div.description-produit:first-child{
+        border-left: none;
+    }
+    h3{
+        font-family: $Mont;
+        font-size: 24px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 16px;
+        font-family: $Geo;
+        color: #333;
+        font-style: italic;
+    }
+    table.shop_attributes{
+        tbody{
+            border: none;
+        }
+        td p{
+            text-align: right;
+            padding: 15px;
+        }
+        th{
+            border: none;
+            font-family: $Geo;
+            color: $cara;
+            font-style: italic;
+            text-align: left;
+        }
+        tr.alt{
+            background: rgba(198, 156, 109, 0.1);
+            border: none;
+        }
+    }
+}
+
+.woocommerce table.shop_attributes .alt td, .woocommerce table.shop_attributes .alt th{
+    border: none;
+}
+
+.woocommerce table.shop_attributes td, .woocommerce table.shop_attributes th{
+    border: none;
+}
+
+.woocommerce div.product div.images{
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+}
+
+
+
+//=============================================== DETAILS
+
+.full-watches{
+    margin-top: 50px;
+}
+
+.ariane{
+    margin-top: 20px;
+}
+
+form.cart{
+    margin-top: 30px;
+}
+
+#reviews{
+    margin-top: 50px;
+    font-family: $Mont;
+    h2{
+        font-family: $Mont;
+        color: $cara;
+        font-size: 28px;
+    }
+    .comment-reply-title{
+        font-family: $Mont;
+    }
+}
+
+a.woocommerce-review-link{
+    color: $cara;
+        &:hover{
+            text-decoration: underline;
+        }
+}

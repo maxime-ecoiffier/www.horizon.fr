@@ -1,0 +1,35 @@
+.sites-button {
+  background: url('../images/_visuels_dyns/horizon-button.svg') center no-repeat;
+  color: #fff;
+  background-size: cover;
+  /*-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;*/
+  padding: 20px;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: $Mont;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.sites-button:hover {
+  background: url('../images/_visuels_dyns/horizon-button-hover-sombre.svg') center no-repeat;
+  background-size: cover;
+  color: #fff;
+  /*-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;*/
+  padding: 20px;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: $Mont;
+  font-size: 16px;
+  text-transform: uppercase;
+}
