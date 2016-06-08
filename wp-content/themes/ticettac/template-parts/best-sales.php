@@ -1,4 +1,4 @@
-<div class="small-12 medium-6 large-3 columns animated fadeIn">
+<div class="small-12 medium-6 large-3 columns animated fadeIn article-montre">
     <div id="img-mini" class="watches-img">
         <a href='<?php the_permalink(); ?>'>
             <div class="hover-thumbnail-cart">
@@ -16,9 +16,11 @@
         <h3 class="title-article-montre"><?php the_title(); ?></h3>
         <span class="price-white"><?php echo $price = get_post_meta( get_the_ID(), '_regular_price', true); ?>€</span>
         <!--<a class="add_to_cart" href="<?php the_permalink(); ?>">Ajouter au panier</a>-->
+
+        <!--<a rel="nofollow" href="/www.horizon.fr/index.php/panier" data-quantity-"1" data-product_sku class="ajouter nouveaux-arrivants">Ajouter au panier</a>-->
         <form class="cart add-to-cart-accueil" method="post" enctype="multipart/form-data">
             <input type="hidden" name="add-to-cart" value="20">
-        	<button type="submit" class="single_add_to_cart_button button alt">Ajouter au panier</button>
+        	<button type="submit" class="single_add_to_cart_button button alt ajouter best-sales">Ajouter au panier</button>
         </form>
     </span>
 </div>

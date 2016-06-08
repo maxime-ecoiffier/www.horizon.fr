@@ -71,11 +71,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 
 	</div><!-- .summary -->
-	
+
 	<div class="clr"></div>
 	<div class="">
-		<?php woocommerce_product_description_tab();
-			comments_template(); ?>
+		<?php
+			woocommerce_product_description_tab();
+			woocommerce_output_related_products();
+			comments_template();
+		?>
 	</div>
 
 	<div class="related-product-container">

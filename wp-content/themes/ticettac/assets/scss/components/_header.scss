@@ -184,6 +184,7 @@ nav#site-navigation select.filtres{
     font-size: 12px;
     text-transform: uppercase;
     width: 100px;
+    margin-top: 7px;
     height: 35px;
     background: url('../images/_visuels_dyns/arrow-filtre.png') right no-repeat $fonce;
     background-position: 90%;
@@ -216,7 +217,7 @@ nav#site-navigation select.filtres{
     display: block;
     position: absolute;
     right: 5px;
-    top: 10px;
+    top: 7px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;

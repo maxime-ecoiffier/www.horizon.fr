@@ -80,34 +80,27 @@
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
-<script type="text/javascript">
-
-	$('a.icon-arrow-continue').on('click', function(event) {
-    var target = $(".nouveaux-arrivants");
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
-
-$('#woocommerce_product_categories-3 > select.dropdown_product_cat > option:first-of-type').replaceWith('');
-$('#woocommerce_layered_nav-5 > select.dropdown_layered_nav_cadran > option:first-of-type').replaceWith('<option value>Cadran</option>');
-&('.full-watches > ul.products > li > a > img').after('<span>Voir le modèle</span>');
-</script>
-
-<!-- SCROLL BAR -->
 
 <!-- Google CDN jQuery with fallback to local -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascript/jquery-1.11.0.min.js"><\/script>')</script>
 
-<!-- custom scrollbar plugin -->
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascript/jquery-1.9.1.min.js"></script>
+
 <script type="text/javascript">
 
+$('a.icon-arrow-continue').on('click', function(event) {
+var target = $(".nouveaux-arrivants");
+if( target.length ) {
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: target.offset().top
+	}, 1000);
+}
+});
+$('#woocommerce_product_categories-3 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value>Marques</option>');
+$('#woocommerce_layered_nav-5 > select.dropdown_layered_nav_cadran > option:first-of-type').replaceWith('<option value>Cadran</option>');
+$('.full-watches > ul.products > li > a > img').after('<span>Voir le modèle</span>');
 </script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascript/jquery-1.9.1.min.js"></script>
 </body>
 </html>

@@ -75,6 +75,10 @@ define('_URL_IMAGES', get_stylesheet_directory_uri().'/assets/images/');
     // 2. On enleve le tableau avec les avis et description
     remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 
+// --> Related product avant les avis
+    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+
 
 function my_availability() {
     require_once('woocommerce/single-product/availability.php');

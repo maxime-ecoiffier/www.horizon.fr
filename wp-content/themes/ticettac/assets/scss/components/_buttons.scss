@@ -1,3 +1,5 @@
+// Boutons Grunge
+
 .sites-button {
   background: url('../images/_visuels_dyns/horizon-button.svg') center no-repeat;
   color: #fff;
@@ -32,4 +34,95 @@
   font-family: $Mont;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+// Bouton ADD to CART
+
+form.cart.add-to-cart-accueil button.ajouter.best-sales{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid $cara;
+    color: $cara;
+    width: 100%;
+    display: inline-block;
+    height: 35px;
+    margin-top: 0px;
+    line-height: 15px;
+    margin-left: 0px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+form.cart.add-to-cart-accueil button.ajouter.best-sales:hover{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: $cara;
+    border: 1px solid $cara;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+form.cart.add-to-cart-accueil{
+    margin-top: 0px;
+        button.ajouter.nouveaux-arrivants{
+            font-family: $Mont;
+            text-transform: uppercase;
+            border-radius: 0px;
+            font-size: 12px;
+            background: transparent;
+            border: 1px solid $fonce;
+            color: $fonce;
+            width: 100%;
+            display: inline-block;
+            height: 35px;
+            margin-top: 0px;
+            line-height: 15px;
+            margin-left: 0px;
+            text-align: center;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+}
+
+form.cart.add-to-cart-accueil button.ajouter.nouveaux-arrivants:hover ~ div.hover-thumbnail-cart{
+    background: rgba(46,30,21, 0.7);
+    cursor: pointer;
+        i.fa-shopping-cart{
+        opacity: 1;
+    }
+}
+
+form.cart.add-to-cart-accueil button.ajouter.nouveaux-arrivants:hover{
+    font-family: $Mont;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background: $fonce;
+    border: 1px solid $fonce;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.woocommerce ul.products li.product .button{
+    margin-top: 0px;
 }

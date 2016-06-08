@@ -44,6 +44,7 @@ get_header(); ?>
 					$args = array(
 						'post_type' => 'product',
 						'posts_per_page' => 4,
+						'product_cat' => 'marques'
 						//'meta_key' => 'total_sales',
 						//'oderby' => 'meta_value_num'
 						);
@@ -139,6 +140,7 @@ get_header(); ?>
 							<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/horizon-blog-texte-news.jpg" class="bandeau" alt="Bandeau"/>
 							<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/horizon-blog-image-news.jpg" class="couverture" alt="Nouveautés"/>
 					</a>
+					<!--
 					<div class="line-news">
 						<a href="#" class="nouveautes large-3 columns">
 								<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/horizon-blog-new1.jpg" class="couverture" alt="Nouveautés"/>
@@ -158,7 +160,28 @@ get_header(); ?>
 								<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/horizon-blog-new4.jpg" class="couverture" alt="Nouveautés"/>
 								<span class="TitreActu">La violoniste Chika Edanami</span>
 						</a>
+					</div>-->
+
+					<div class="large-6 columns">
+						<?php
+				            $args = array(
+				                'post_type' => 'post',
+				                'posts_per_page' => 4,
+				                //'meta_key' => 'total_sales',
+				                //'oderby' => 'meta_value_num'
+				                );
+				            $loop = new WP_Query( $args );
+				            if ( $loop->have_posts() ) {
+				                while ( $loop->have_posts() ) : $loop->the_post();
+				                    get_template_part( 'template-parts/blog-item', get_post_format() );
+				                endwhile;
+				            } else {
+				                echo __( 'Erreur de chargement des produits' );
+				            }
+				            wp_reset_postdata();
+				        ?>
 					</div>
+
 				</div>
 		</section>
 
@@ -179,7 +202,7 @@ get_header(); ?>
 				</div>
 				<div class="row">
 						<h1 id="target-arrow" class="titre-section-accueil-blanc"><span class="border-title">LES MEILLEURES VENTES</span></h1>
-						
+
 						<!-- BLOQUE LE NOMBRE DE PRODUIT A AFFICHER A 4 ET PAR ORDRE DECROISSANT DE NOMBRE D'ACHATS-->
 						<?php
 							$argsBS = array(

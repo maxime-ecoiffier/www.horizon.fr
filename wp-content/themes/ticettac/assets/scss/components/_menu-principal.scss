@@ -67,7 +67,11 @@
 
 // menu principal
 .main-menu{
+    padding: 0px;
+}
 
+.mega-menu-toggle{
+    background: #000 !important;
 }
 
 // menu formulaire (recherche et filtres en dur)
@@ -117,6 +121,7 @@
         background-position: 90%;
         border: none;
         padding: 10px;
+        margin-top: 7px;
         color: #fff;
         font-family: $Mont;
         -webkit-transition: all 0.2s ease-in-out;

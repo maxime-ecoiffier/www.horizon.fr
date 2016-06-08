@@ -5,14 +5,14 @@
 //=================================================================== MESSAGES WOOCOMMERCE
 
 .woocommerce .woocommerce-message{
-    background: #fff;
+    background: $cara;
     border: 1px solid $cara;
     font-size: 14px;
-    color: $cara;
+    color: #fff;
     border-top-color: $cara;
     vertical-align: middle;
         &::before{
-            color: $fonce;
+            color: #fff;
         }
 }
 

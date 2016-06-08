@@ -114,16 +114,16 @@ div#img-mini-categorie{
 
 // TEXTES SOUS THUMBNAILS
 
-.product.type-product.has-post-thumbnail.product-type-simple.instock{
-    .star-rating{
-        display: none;
+.has-post-thumbnail{
+    div.star-rating{
+        display: none !important;
     }
     h3{
         text-align: center;
         font-family: $Geo;
         color: $cara;
         font-style: italic;
-        font-size: 18px;
+        font-size: 28px;
     }
     span.price{
         text-align: center;
@@ -138,4 +138,10 @@ div#img-mini-categorie{
         width: 100%;
         text-transform: uppercase;
     }
+}
+
+// Container Categorie
+
+.full-watches{
+    padding: 0px;
 }
